@@ -1,10 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "FPSCharacter.generated.h"
+
 
 UCLASS()
 class FPSPROJECT_API AFPSCharacter : public ACharacter
@@ -34,4 +36,12 @@ public:
 	UFUNCTION()
 		void MoveRight(float Value);
 
+	UFUNCTION()
+		void StartJump();
+
+	UFUNCTION()
+		void StopJump();
+
+	UPROPERTY(VisibleAnywhere)
+		UCameraComponent* FPSCameraComponent;
 };
