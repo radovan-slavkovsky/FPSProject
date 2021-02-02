@@ -23,7 +23,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
-		TSubclassOf<class AFPSProjectile> ProjectilesClass;
+		TSubclassOf<class AFPSProjectile> ProjectileClass;
 
 public:
 	// Called every frame

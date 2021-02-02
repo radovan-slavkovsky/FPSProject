@@ -75,7 +75,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFPSCharacter); \
 
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ProjectilesClass() { return STRUCT_OFFSET(AFPSCharacter, ProjectilesClass); }
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AFPSCharacter, ProjectileClass); }
 
 
 #define FPSProject_Source_FPSProject_FPSCharacter_h_13_PROLOG
