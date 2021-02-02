@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSProject_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xEB65523E,
+				0x50A39F9B,
 				0xA99A01CC,
 				METADATA_PARAMS(nullptr, 0)
 			};
