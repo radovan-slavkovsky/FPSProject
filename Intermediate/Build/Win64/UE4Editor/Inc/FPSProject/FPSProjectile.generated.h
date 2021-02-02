@@ -8,14 +8,26 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FVector;
+struct FHitResult;
 #ifdef FPSPROJECT_FPSProjectile_generated_h
 #error "FPSProjectile.generated.h already included, missing '#pragma once' in FPSProjectile.h"
 #endif
 #define FPSPROJECT_FPSProjectile_generated_h
 
 #define FPSProject_Source_FPSProject_FPSProjectile_h_15_SPARSE_DATA
-#define FPSProject_Source_FPSProject_FPSProjectile_h_15_RPC_WRAPPERS
-#define FPSProject_Source_FPSProject_FPSProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FPSProject_Source_FPSProject_FPSProjectile_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
+#define FPSProject_Source_FPSProject_FPSProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnHit);
+
+
 #define FPSProject_Source_FPSProject_FPSProjectile_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPSProjectile(); \
