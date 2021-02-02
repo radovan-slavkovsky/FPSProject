@@ -33,8 +33,7 @@ AFPSProjectile::AFPSProjectile() {
 		static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("'/Game/Sphere.Sphere'"));
 		//static ConstructorHelpers::FObjectFinder<UStaticMesh>Mesh(TEXT("StaticMesh'/Game/Sphere.Sphere'"));
 
-		if (Mesh.Succeeded())
-		{
+		if (Mesh.Succeeded()) {
 			ProjectileMeshComponent->SetStaticMesh(Mesh.Object);
 		}
 	}
@@ -46,6 +45,9 @@ AFPSProjectile::AFPSProjectile() {
 	ProjectileMeshComponent->SetMaterial(0, ProjectileMaterialInstance);
 	ProjectileMeshComponent->SetRelativeScale3D(FVector(0.09f, 0.09f, 0.09f));
 	ProjectileMeshComponent->SetupAttachment(RootComponent);
+
+	// ? have to be redesigned 
+	InitialLifeSpan = 3.0f;
 }
 
 void AFPSProjectile::FireInDirection(const FVector& ShootDirection) {
@@ -55,12 +57,10 @@ void AFPSProjectile::FireInDirection(const FVector& ShootDirection) {
 // Called when the game starts or when spawned
 void AFPSProjectile::BeginPlay() {
 	Super::BeginPlay();
-
 }
 
 // Called every frame
 void AFPSProjectile::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
-
 }
 
